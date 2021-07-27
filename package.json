@@ -1,0 +1,42 @@
+{
+  "name": "vis-workflow-timeline",
+  "version": "0.0.1",
+  "description": "An application of vis-timeline to workflow data.",
+  "main": "workflow-timeline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workflowfm/vis-workflow-timeline.git"
+  },
+  "keywords": [
+    "workflow",
+    "timeline",
+    "visualization"
+  ],
+  "author": "Petros Papapanagiotou",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/workflowfm/vis-workflow-timeline/issues"
+  },
+  "homepage": "https://github.com/workflowfm/vis-workflow-timeline#readme",
+  "dependencies": {
+    "colormap": "^2.3.2",
+    "vis-data": "^7.1.2",
+    "vis-timeline": "^7.4.9"
+  },
+  "devDependencies": {
+    "@egjs/hammerjs": "^2.0.17",
+    "component-emitter": "^1.3.0",
+    "keycharm": "^0.4.0",
+    "moment": "^2.29.1",
+    "propagating-hammerjs": "^2.0.1",
+    "uuid": "^8.3.2",
+    "vis-util": "^5.0.2",
+    "xss": "^1.0.9"
+  },
+  "scripts": {
+    "build": "browserify workflow-timeline.js -o html/workflow-timeline-bundle.js "
+  }
+}

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Timeline</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="workflow-timeline-bundle.js"></script>
+    <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Minutes</h1>
+<h2>Resources:</h2>
+<div id="resources"></div>
+<h2>Worfklows:</h2>
+<div id="workflows"></div>
+
+<script src="data-example-minutes.js"></script>
+<script type="text/javascript">
+  workflowTimeline("resources", resourceData, tasks, new Date(new Date().getFullYear(), 0, 1));
+  workflowTimeline("workflows", simulationData, tasks);
+</script>
+
+<h1>Units</h1>
+<h2>Resources:</h2>
+<div id="uresources"></div>
+<h2>Worfklows:</h2>
+<div id="uworkflows"></div>
+<script src="data-example-units.js"></script>
+<script type="text/javascript">
+  workflowUnitTimeline("uresources", resourceData, tasks);
+  workflowUnitTimeline("uworkflows", simulationData, tasks);
+</script>
+
+</body>
+</html>
