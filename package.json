@@ -37,6 +37,6 @@
     "xss": "^1.0.9"
   },
   "scripts": {
-    "build": "browserify workflow-timeline.js -o html/workflow-timeline-bundle.js "
+    "build": "browserify workflow-timeline.js -o examples/bundle.js "
   }
 }
